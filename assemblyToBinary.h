@@ -5,7 +5,7 @@ using namespace std;
 
 string hexaToBinary(string &s)
 {
-    string bin;
+    string binaryNumber;
 
     int i = 2;
     while (s[i] == '0')
@@ -31,10 +31,10 @@ string hexaToBinary(string &s)
 
     for (int j = i; j < s.size(); j++)
     {
-        bin += mpp[s[j]];
+        binaryNumber += mpp[s[j]];
     }
 
-    return bin;
+    return binaryNumber;
 }
 
 string decimalToBinary(string &s, int len, bool imm)
