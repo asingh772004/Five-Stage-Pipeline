@@ -1,4 +1,12 @@
-#include<bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <string>
+#include <sstream>
+#include <algorithm>
+#include <unordered_map>
+#include <cctype>
+#include <fstream> 
+
 #include "../include/assembly_to_binary.h"
 
 using namespace std;
