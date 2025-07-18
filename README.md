@@ -113,3 +113,39 @@ Reg1 = 5; Reg2 = 10; Reg3 = 15;
 Mem0 = 15;
 ```
 
+
+- The pipeline continues until all activity has stopped.
+
+---
+
+## Extending the Project
+
+- **To add new instructions:** Update opcode and encoding tables in `src/assembly_to_binary.cpp`.
+- **To handle more hazards:** Extend the pipeline logic in `src/pipeline.cpp`.
+- **To support new registers/more memory:** Change vector sizes in `pipeline.cpp`.
+
+---
+
+## Troubleshooting
+
+- **No output or blank cycles?**  
+Likely your instructions file path is wrong relative to where you run. Double-check the path and file contents.
+- **Linker or include errors?**  
+Make sure to use `cmake` and include all `src/` files in your build.
+- **Build/Debug folders:**  
+Your executable is inside `build/Debug/` by default (Visual Studio/MSVC), or in `build/` for Linux/g++.
+
+---
+
+## Contributing
+
+1. Fork, create a branch, and open PRs for improvements.
+2. Follow the coding/naming conventions as in the current repository.
+3. Please add tests and documentation for new features.
+
+---
+
+## Authors & Contact
+
+Developed by Aditya Singh  
+For queries and contributions, open a GitHub issue or pull request.
