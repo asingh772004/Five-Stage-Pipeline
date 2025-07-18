@@ -77,3 +77,15 @@ beq x1, x2, 2 # if x1==x2 jump 2 ahead (not taken)
 addi x6, x0, 100 # x6 = 100
 ```
 
+### 2. Run the Simulator
+
+Run from your `build/Debug` (Windows) or `build` (Linux) folder. Give the correct **relative path** to your instruction file.
+
+**Windows Example:**
+
+```
+cd build/Debug
+pipeline.exe ../../test_instructions.txt
+```
+
+
