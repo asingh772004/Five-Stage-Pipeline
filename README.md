@@ -28,5 +28,5 @@ Five-Stage-Pipeline/
 ├── test_instructions.txt
 ├── CMakeLists.txt
 ├── README.md
-├── .gitignore
+└── .gitignore
 ```
