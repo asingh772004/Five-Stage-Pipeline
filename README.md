@@ -96,3 +96,20 @@ cd build
 ```
 
 
+If you have modified your code to accept a specific file path or to always read from the project root, adjust accordingly.
+
+---
+
+## Output
+
+- For each input instruction, the program prints its binary encoding.
+- For each pipeline cycle, you see only the registers and memory that changed.
+- Output format:  
+
+```
+Cycle: 3
+Register/Memory Contents after Cycle 3:
+Reg1 = 5; Reg2 = 10; Reg3 = 15;
+Mem0 = 15;
+```
+
