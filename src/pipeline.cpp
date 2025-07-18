@@ -330,8 +330,11 @@ int main() {
     ifstream fin("test_instructions.txt");
     vector<string> all_lines;
     string line;
-    while (getline(fin, line))
+    while (getline(fin, line)){
+        cout << line << endl;
         if (!line.empty() && line[0] != '#') all_lines.push_back(line);
+    }
+        
 
     int n = all_lines.size();
     PC.value = 0;
