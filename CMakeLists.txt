@@ -14,6 +14,5 @@ add_executable(pipeline
 )
 
 # For Windows: Set output directory next to source
-set_target_properties(pipeline PROPERTIES
-    RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}
-)
+set_target_properties(pipeline PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/build)
+
