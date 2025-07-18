@@ -56,3 +56,14 @@ cmake ..
 cmake --build .
 ```
 
+
+- On successful build, your binary will be in `build/Debug/` (Debug mode, Windows/MSVC) or `build/` (Linux/g++), named `pipeline.exe` or `pipeline`.
+
+---
+
+## Usage
+
+### 1. Prepare Your Instruction File
+
+Instructions go in `test_instructions.txt` (or any file of your choice). Example:
+
