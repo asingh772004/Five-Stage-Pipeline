@@ -67,3 +67,13 @@ cmake --build .
 
 Instructions go in `test_instructions.txt` (or any file of your choice). Example:
 
+```
+addi x1, x0, 5 # x1 = 5
+addi x2, x0, 10 # x2 = 10
+add x3, x1, x2 # x3 = x1 + x2 = 15
+sw x3, 0(x0) # mem = x3 = 15
+lw x5, 0(x0) # x5 = mem = 15
+beq x1, x2, 2 # if x1==x2 jump 2 ahead (not taken)
+addi x6, x0, 100 # x6 = 100
+```
+
