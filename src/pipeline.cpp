@@ -306,20 +306,19 @@ void write_back() {
         }
     }
 }
-
-// Print register and memory content
-void printer() {
+// Print register and memory content with cycle info
+void printer(int cycle) {
+    cout << "Register/Memory Contents after Cycle " << cycle << ":" << endl;
     for (int i = 0; i < 32; i++) {
         if (reg[i].value != 0)
-            cout << "Reg" << i << " " << reg[i].value << " ";
+            cout << "Reg" << i << " = " << reg[i].value << "; ";
     }
     cout << endl;
-
     for (int i = 0; i < 1023; i++) {
         if (mem[i] != 1e9)
-            cout << "Mem" << i << " " << mem[i] << " ";
+            cout << "Mem" << i << " = " << mem[i] << "; ";
     }
-    cout << endl;
+    cout << endl << endl;
 }
 
 // ----- MAIN -----
@@ -364,13 +363,13 @@ signed main() {
 
     while (validcheck) {
         cout << "Cycle: " << cycle << endl;
-        cycle++;
         write_back();
         memory_operation();
         instruction_execution();
         instruction_decode();
         instruction_fetch();
-        printer();
+        printer(cycle); // pass cycle number to printer
+        cycle++;
         validcheck = PC.valid | IFID.valid | IDEX.valid | EXMO.valid | MOWB.valid;
     }
     return 0;
