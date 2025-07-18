@@ -5,7 +5,6 @@
 #include <algorithm>
 #include <unordered_map>
 #include <cctype>
-#include <fstream>  // If you use files
 
 #include "assembly_to_binary.h"
 using namespace std;
