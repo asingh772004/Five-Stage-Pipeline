@@ -21,12 +21,12 @@ This project is a **C++ simulator of a five-stage pipelined processor** modeled 
 ```
 Five-Stage-Pipeline/
 ├── include/
-│ └── assembly_to_binary.h
+│   └── assembly_to_binary.h
 ├── src/
-│ ├── assembly_to_binary.cpp
-│ └── pipeline.cpp
+│   ├── assembly_to_binary.cpp
+│   └── pipeline.cpp
 ├── test_instructions.txt
 ├── CMakeLists.txt
 ├── README.md
-└── build/ # (created by CMake, contains Debug/Release subfolders)
+├── .gitignore
 ```
