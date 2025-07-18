@@ -30,3 +30,23 @@ Five-Stage-Pipeline/
 ├── README.md
 └── .gitignore
 ```
+
+---
+
+## Setup & Build
+
+### Prerequisites
+
+- **C++ compiler**:
+  - Windows: Visual Studio/MSVC recommended
+  - Linux/macOS: g++ (7.0+)
+- **CMake** (version 3.10 or newer)
+- (Optional) Visual Studio Code with [CMake Tools extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools)
+
+### Build Instructions (CMake-based, cross-platform)
+
+1. Open a terminal (cmd/PowerShell for Windows; terminal for Linux/Mac).
+2. Clone or copy this repository and change to your project directory.
+3. Run the following commands:
+
+
