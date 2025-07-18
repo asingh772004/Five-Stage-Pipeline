@@ -1,12 +1,9 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include <algorithm>
-#include "assembly_to_binary.h"
+#include<bits/stdc++.h>
+#include "../include/assembly_to_binary.h"
 
-// --------- Global Variables ---------
 using namespace std;
 #define int long long
+// --------- Global Variables ---------
 
 vector<string> instruction_memory;
 
