@@ -1,20 +1,20 @@
 #pragma once
-#include <string>
-#include <vector>
+#include <bits/stdc++.h>
+using namespace std;
 
-std::string hexa_to_binary(const std::string &s);
-std::string decimal_to_binary(const std::string &s, int len, bool imm);
-int binary_to_decimal(const std::string &s, bool imm);
-std::vector<std::string> parse_instruction(const std::string &s);
+string hexa_to_binary(const string &s);
+string decimal_to_binary(const string &s, int len, bool imm);
+int binary_to_decimal(const string &s, bool imm);
+vector<string> parse_instruction(const string &s);
 
 // Type conversion functions
-std::string r_type(const std::vector<std::string> &v);
-std::string i_type(const std::vector<std::string> &v);
-std::string load_type(const std::vector<std::string> &v);
-std::string store_type(const std::vector<std::string> &v);
-std::string b_type(const std::vector<std::string> &v);
-std::string u_type(const std::vector<std::string> &v);
-std::string j_type(const std::vector<std::string> &v);
+string r_type(const vector<string> &v);
+string i_type(const vector<string> &v);
+string load_type(const vector<string> &v);
+string store_type(const vector<string> &v);
+string b_type(const vector<string> &v);
+string u_type(const vector<string> &v);
+string j_type(const vector<string> &v);
 
 // Utility
-char instruction_type(const std::string &s);
+char instruction_type(const string &s);
