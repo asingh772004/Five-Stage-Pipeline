@@ -327,7 +327,11 @@ void printer(int cycle) {
 
 // ----- MAIN -----
 int main() {
-    ifstream fin("test_instructions.txt");
+    ifstream fin("../test_instructions.txt"); // from build/Debug
+    if (!fin) {
+        cout << "Failed to open test_instructions.txt! Check your path." << endl;
+        return 1;
+    }
     vector<string> all_lines;
     string line;
     while (getline(fin, line)){
