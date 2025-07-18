@@ -323,18 +323,20 @@ void printer(int cycle) {
 
 // ----- MAIN -----
 signed main() {
-    cout << "Enter the number of instructions you wish to enter\n";
-    int n;
-    cin >> n;
-    cin.ignore();
-    int n1 = n;
+    ifstream fin("test_instructions.txt");
+    vector<string> all_lines;
+    string line;
+    while (getline(fin, line))
+        if (!line.empty() && line[0] != '#') all_lines.push_back(line);
+
+    int n = all_lines.size();
     PC.value = 0;
-    while (n1--) {
-        string s;
-        getline(cin, s);
+    for (int i=0; i<n; ++i) {
+        string s = all_lines[i];
         auto parsed = parse_instruction(s);
         char type = instruction_type(parsed[0]);
         string bincode;
+
         if (type == 'r')
             bincode = r_type(parsed);
         else if (type == 'i')
@@ -352,6 +354,7 @@ signed main() {
 
         instruction_memory.push_back(bincode);
     }
+
 
     for (int i = 0; i < (int)instruction_memory.size(); i++)
         cout << "Binary Code for Instruction " << i + 1 << " is: " << instruction_memory[i] << endl;
