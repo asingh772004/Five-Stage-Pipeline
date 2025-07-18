@@ -85,7 +85,14 @@ Run from your `build/Debug` (Windows) or `build` (Linux) folder. Give the correc
 
 ```
 cd build/Debug
-pipeline.exe ../../test_instructions.txt
+pipeline.exe
+```
+
+**Linux/macOS Example:**
+
+```
+cd build
+./pipeline
 ```
 
 
