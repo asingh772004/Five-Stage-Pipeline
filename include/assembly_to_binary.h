@@ -1,5 +1,12 @@
 #pragma once
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <string>
+#include <sstream>
+#include <algorithm>
+#include <unordered_map>
+#include <cctype>
+
 using namespace std;
 
 string hexa_to_binary(const string &s);
