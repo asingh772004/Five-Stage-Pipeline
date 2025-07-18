@@ -49,4 +49,10 @@ Five-Stage-Pipeline/
 2. Clone or copy this repository and change to your project directory.
 3. Run the following commands:
 
+```
+mkdir build
+cd build
+cmake ..
+cmake --build .
+```
 
