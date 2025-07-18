@@ -2,7 +2,6 @@
 #include "../include/assembly_to_binary.h"
 
 using namespace std;
-#define int long long
 // --------- Global Variables ---------
 
 vector<string> instruction_memory;
@@ -319,7 +318,7 @@ void printer(int cycle) {
 }
 
 // ----- MAIN -----
-signed main() {
+int main() {
     ifstream fin("test_instructions.txt");
     vector<string> all_lines;
     string line;
